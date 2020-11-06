@@ -1,0 +1,8 @@
+{
+  "name": "noise-machine",
+  "version": "1.0.0",
+  "description": "Noise Machine web app",
+  "main": "index.js",
+  "author": "Aleck Landgraf <aleck.landgraf@airbnb.com>",
+  "license": "MIT"
+}
