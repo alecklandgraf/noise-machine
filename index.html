@@ -33,7 +33,7 @@
   <body>
     <div id="app">
       <button aria-label="play pause button">
-        <audio src="/noise-only.mp3"></audio>
+        <audio src="noise-only.mp3"></audio>
       </button>
     </div>
 
@@ -42,7 +42,7 @@
 
       const button = document.querySelector('button');
       button.addEventListener('click', function() {
-        audio = audio || new Audio('/noise-only.mp3');
+        audio = audio || new Audio('noise-only.mp3');
         audio.loop = true;
         if (audio.played.length === 0 || audio.paused || audio.ended) {
           audio.play();
@@ -53,7 +53,7 @@
 
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          navigator.serviceWorker.register('sw.js').then(function(registration) {
             // Registration was successful
             console.log('ServiceWorker registrations successful with scope: ', registration.scope);
           }, function(err) {
